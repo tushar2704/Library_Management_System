@@ -1,5 +1,15 @@
 # Library_Management_System
-© 2023 Tushar Aggarwal. All rights reserved.
+
+
+
+![POSTGRESQL](https://img.shields.io/badge/PostgreSQL-4169E1.svg?style=for-the-badge&logo=PostgreSQL&logoColor=white)
+![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
+![Microsoft Office](https://img.shields.io/badge/Microsoft_Office-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white)
+![Microsoft Word](https://img.shields.io/badge/Microsoft_Word-2B579A?style=for-the-badge&logo=microsoft-word&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 The Library Management System is a project aimed at creating an efficient system for managing a library's operations. This system allows users to issue books, search for different books and their titles, and provides detailed information about the books available in the library. By automating these processes, it eliminates the need for manual record-keeping and offers a user-friendly experience.
 
@@ -7,55 +17,21 @@ The Library Management System is a project aimed at creating an efficient system
 
 The main objective of this project is to develop a comprehensive library management system that simplifies the management of books within a library. This system maintains a centralized database of books, including their details such as title, price, status, and the total number of books available. It streamlines the borrowing process and provides users with easy access to information, making it an efficient alternative to the traditional manual recording system.
 
-## SQL Queries Examples
+## Project Structure
 
-As part of this project, several SQL queries are utilized to interact with the database and retrieve information. Here are a few examples:
+    ├── LICENSE
+    ├── README.md          <- README .
+    ├── reports            <- Folder containing the final reports/results of this project.
+    │   │
+    │   └── query_report.pdf        <- Final query report in PDF for verifying data.
+    │   
+    ├── src                <- Source for this project.
+        │
+        ├── LMS_query.sql           <- Final query for this project.
+        ├── LMS_schema.sql          <- Schema for this project.
+        
+--------
 
-1. Retrieve all books from the database:
-```sql
-SELECT * FROM books;
-```
-
-2. Search for books by title:
-```sql
-SELECT * FROM books WHERE title LIKE '%keyword%';
-```
-
-3. Check the availability of a specific book:
-```sql
-SELECT * FROM books WHERE title = 'Book Title' AND status = 'Available';
-```
-
-4. Update the status of a book after it has been issued:
-```sql
-UPDATE books SET status = 'Issued' WHERE book_id = '123';
-```
-
-5. Insert a new book into the database:
-```sql
-INSERT INTO books (title, price, status, quantity) VALUES ('Book Title', 29.99, 'Available', 5);
-```
-
-Please note that these queries are just examples, and the actual queries used in the project may vary based on the specific requirements.
-
-## Features
-
-The Library Management System is designed with the following features in mind:
-
-- User-friendly interface for easy navigation and interaction.
-- Comprehensive entry for each book, containing details such as title, price, status, and quantity.
-- Efficient search functionality to allow users to find books by their titles.
-- Streamlined book issuing process to facilitate borrowing and returning.
-- Centralized database to store and manage book information.
-- Automated tracking of available books in the library.
-
-By incorporating these features, the Library Management System aims to provide an efficient and user-friendly solution for managing library operations.
-
-## Conclusion
-
-The Library Management System is an automated solution that simplifies the management of books within a library. It offers a user-friendly interface, extensive book details, and efficient search functionality. By utilizing SQL queries, it interacts with a database to store and retrieve information effectively. With this system in place, the process of book management becomes more streamlined and convenient for both library staff and users.
-The `books` table stores information about books available in the library.
---------------------------------------------
 # Library Management System - Schema created
 
 ## Table: books
@@ -103,3 +79,34 @@ The `issued_books` table stores information about the books issued by customers.
 | due_date       | DATE         | NOT NULL          | Due date for returning the book          |
 | return_date    | DATE         |                   | Date when the book was returned (optional)|
 ----
+
+
+
+## Features
+
+The Library Management System is designed with the following features in mind:
+
+- User-friendly interface for easy navigation and interaction.
+- Comprehensive entry for each book, containing details such as title, price, status, and quantity.
+- Efficient search functionality to allow users to find books by their titles.
+- Streamlined book issuing process to facilitate borrowing and returning.
+- Centralized database to store and manage book information.
+- Automated tracking of available books in the library.
+
+By incorporating these features, the Library Management System aims to provide an efficient and user-friendly solution for managing library operations.
+
+## Conclusion
+
+The Library Management System is an automated solution that simplifies the management of books within a library. It offers a user-friendly interface, extensive book details, and efficient search functionality. By utilizing SQL queries, it interacts with a database to store and retrieve information effectively. With this system in place, the process of book management becomes more streamlined and convenient for both library staff and users.
+The `books` table stores information about books available in the library.
+
+## Author
+- <ins><b>©2023 Tushar Aggarwal. All rights reserved</b></ins>
+- <b>[LinkedIn](https://www.linkedin.com/in/tusharaggarwalinseec/)</b>
+- <b>[Medium](https://medium.com/@tushar_aggarwal)</b> 
+- <b>[Tushar-Aggarwal.com](https://www.tushar-aggarwal.com/)</b>
+- <b>[New Kaggle](https://www.kaggle.com/tagg27)</b> 
+
+## Contact me!
+
+If you have any questions, suggestions, or just want to say hello, you can reach out to us at [Tushar Aggarwal](mailto:info@tushar-aggarwal.com). We would love to hear from you!
